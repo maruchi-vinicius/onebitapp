@@ -2,6 +2,7 @@ import React from "react";
 import { Image, Text, View } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import { StyleSheet } from "react-native";
+import LifeStatus from "../../Components/Common/LifeStatus";
 
 export default function Start() {
     return(
@@ -9,6 +10,7 @@ export default function Start() {
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={{ alignItems:"center"}}>
                     <Image style={styles.logo} source={require("../../assets/icons/logo3.png")} ></Image>
+                    <LifeStatus />
                     <Text style={styles.description}>
                         Vamos transformar a vida em um jogo,{"\n"} e subir de nível sempre;
                     </Text>
