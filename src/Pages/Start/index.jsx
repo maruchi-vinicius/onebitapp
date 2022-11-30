@@ -3,8 +3,14 @@ import { Image, Text, View } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import { StyleSheet } from "react-native";
 import LifeStatus from "../../Components/Common/LifeStatus";
+import DefaultButton from "../../Components/Common/DefaultButton";
 
 export default function Start() {
+
+    const handleNavAppExplanation = () => {
+        console.log("click funcionando");
+    }
+
     return(
         <View style={styles.container} >
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -14,6 +20,13 @@ export default function Start() {
                     <Text style={styles.description}>
                         Vamos transformar a vida em um jogo,{"\n"} e subir de nível sempre;
                     </Text>
+
+                    <DefaultButton
+                        buttonText={"Continuar"}
+                        handlePress={handleNavAppExplanation}
+                        width={250}
+                        height={50}
+                    />
                 </View>
             </ScrollView>
         </View>
