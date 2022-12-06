@@ -1,8 +1,10 @@
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 
 export default function ExplanationCard(){
+
     return (
 
         <View style={styles.container}>
@@ -29,7 +31,7 @@ export default function ExplanationCard(){
                 />
                 <Text style={styles.description}>
                     <Text style={styles.money}>Financeiro: </Text>
-                    Hábitos para ajudar com controle financeiro
+                    Hábitos para ajudar com {"\n"} controle financeiro
                 </Text>
             </View>
 
