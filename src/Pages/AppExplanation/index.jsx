@@ -1,11 +1,11 @@
 import React from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
-import DefaultButton from "../../../Components/Common/DefaultButton";
+import DefaultButton from "../../Components/Common/DefaultButton";
+import ExplanationCard from "../../Components/Explanation/ExplanationCard";
 
 export default function AppExplanation(){
-
-    function handleSetShowHome(){
-        console.log("botao clicado 2");
+    function handleSetShowHome() {
+        console.log("click");
     }
 
     return(
@@ -15,6 +15,8 @@ export default function AppExplanation(){
                     <Text style={styles.tittle}>
                         Antes, deixa eu {'\n'} te explicar...
                     </Text>
+
+                    <ExplanationCard />
 
                     <Text style={styles.descriptionCta}>
                         Pronto para subir de nível na vida?
