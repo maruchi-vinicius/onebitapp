@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         marginVertical: 10,
         paddingVertical: 10,
         paddingHorizontal: 20,
-        borderWidth: 2,
+        borderWidth: 1,
         borderStyle: "dotted",
         borderColor: "white",
         borderRadius: 5,
